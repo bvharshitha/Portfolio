@@ -5,10 +5,10 @@
 }
 body {
     font-family: Arial, sans-serif;
-    /* background: linear-gradient(141deg, #000000 0%,#0e2d2b 55%, #0e2d2b 55%, #000000);
+    background: linear-gradient(141deg, #000000 0%,#0e2d2b 55%, #0e2d2b 55%, #000000);
     background-size: cover;
-    background-attachment: fixed; */
-     background: linear-gradient(141deg, #000000 0%, #0e2d2b 33%, #4b73ae 55%, #000000);
+    background-attachment: fixed;
+     /* background: linear-gradient(141deg, #000000 0%, #0e2d2b 33%, #4b73ae 55%, #000000); */
     
 }
 .protfolio{
@@ -89,6 +89,7 @@ section p {
 }
 
 #about {
+    width:100%;
     height: calc(100vh - 60px);  /* Use full viewport height */
     position: relative;
     overflow: hidden;
@@ -117,6 +118,10 @@ section p {
     display:flex;
     flex-direction: column;
     text-align: center;
+    width:100%;
+}
+.intro{
+    width:100%;
 }
 .intro h2 {
     font-size: 40px;
@@ -445,6 +450,7 @@ section p {
 /*-----------------------------------Projects section----------------------------------*/
 
 #projects{
+    width: 100%;
     background:rgb(0, 0, 0, 0.4);
     height:max-content;
 }
@@ -788,6 +794,7 @@ label{
     .project_container {
         flex-direction: column; 
         gap:20px;
+        width:100%;
     }
     br{
         display: none;
@@ -802,16 +809,30 @@ label{
         margin: 20px;
     }
     form{
-        width:100%;
+        width:90%;
     }
     .request button{
-        width:100%;
+        width:80%;
     }
 
 }
 
 /* Responsive Design for Mobile Devices */
 @media screen and (max-width: 768px) {
+    .intro h2 {
+        font-size: 20px;
+    }
+    .intro p{
+        font-size: 18px;
+    }    
+    .intro_buttons button {
+        margin:5px;
+    }
+    .intro_buttons{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+    }
     .education-block {
         width: 100%;
     }
@@ -863,7 +884,10 @@ label{
     }
 
     .project_container {
-        flex-direction: column; 
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
     }
     .project_block{
         border: 1px dashed black;
@@ -880,4 +904,10 @@ label{
         width:80%;
     }
 
+}
+@media screen and (max-width: 450px) {
+    .project_block{
+        border: 1px dashed black;
+        width:250px;
+    }    
 }
