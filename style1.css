@@ -5,10 +5,10 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(141deg, #000000 0%,#0e2d2b 55%, #0e2d2b 55%, #000000);
+/*     background: linear-gradient(141deg, #000000 0%,#0e2d2b 55%, #0e2d2b 55%, #000000);
     background-size: cover;
-    background-attachment: fixed;
-     /* background: linear-gradient(141deg, #000000 0%, #0e2d2b 33%, #4b73ae 55%, #000000); */
+    background-attachment: fixed; */
+     background: linear-gradient(141deg, #000000 0%, #0e2d2b 33%, #4b73ae 55%, #000000);
     
 }
 .protfolio{
