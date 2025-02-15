@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style1.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Venkata Harshitha Bathala | Portfolio</title>
+    <script src="script.js"></script>
+
+</head>
+<body onload="showExperience('job1')">
+<div class="protfolio">
+    <div class="head">
+        <div class="name">
+            <b>VENKATA HARSHITHA BATHALA</b>
+        </div>
+        <div class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="navigation">
+            <a href="#about" class="nav-item">About</a>
+            <a href="#education" class="nav-item">Education</a>
+            <a href="#work-experience" class="nav-item">Work Experience</a>
+            <a href="#skills" class="nav-item">Skills</a>
+            <a href="#projects" class="nav-item">Projects</a>
+            <a href="#contact" class="nav-item">Contact</a>
+            <a href="https://github.com/bvharshitha" target="_blank"><button><b>View GitHub</b></button></a>
+        </div>
+    </div>
+
+<div class="scroll">
+<section id="about">
+       <div class=about>
+            <div class="about_container">
+                <div class="intro">
+                    <h2><b>VENKATA HARSHITHA BATHALA</b></h2>
+                    <p>Computer Science Graduate Student | Graduate Research Assistant</p>
+                </div>
+                <div class=intro_buttons>
+                    <div><a href="Venkata Harshitha Bathala.pdf" target="_blank"><button>Resume</button></a></div>
+                    <div><a href="#contact"><button>Contact Info</button></a></div>
+                </div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+       </div>
+</section>
+
+<section id="education">
+    <div class="education-overlay">
+        <div class=section>Education</div>
+        <div class="education-container">
+            <div class="education-block">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Master's in Computer Science</h3>
+                <p>University of Texas at Arlington</p><p>2023 - Present</p>
+
+                <div class="secret-container">
+        <button class="secret-button" onclick="revealGrades(this)">
+            Secret . . . <span style="font-size: 1.5em;">🫣</span>
+            <span class="tooltip">Want to know my grades?</span> <!-- Tooltip -->
+        </button>
+        <div class="grades">
+            <p><strong>GPA:</strong> 3.8</p>
+        </div>
+        </div>
+            </div>
+            <div class="education-block">
+                <i class="fas fa-university"></i>
+                <h3>Bachelor's in Computer Science</h3>
+                <p>Annamacharya Institute of Technology and Science</p><p>2018 - 2022</p>
+                <div class="secret-container">
+        <button class="secret-button" onclick="revealGrades(this)">
+            Secret . . . <span style="font-size: 1.5em;">🫣</span>
+            <span class="tooltip">Want to know my grades?</span> <!-- Tooltip -->
+        </button>
+        <div class="grades">
+            <p><strong>CGPA:</strong> 8.35</p>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section id="work-experience">
+<div class=work>
+<div class=section style="padding-top: 20px;">Work Experience</div>
+<div class="timeline">
+  <div class="container">
+    <div class="content">
+      <h3>07/2024 - Current</h3>
+      <p>University of Texas at Arlington</p>
+      <p>Student Assistant</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="content">
+      <h3>02/2023 - 12/2023</h3>
+      <p>DXC Technology</p>
+      <p>Data Analyst</p>
+    </div>
+  </div>
+</div>
+</div>
+
+</section> -->
+<section id="work-experience">
+ <div class=work>
+    <div class=section style="padding-top: 20px; text-align: center;">Work Experience</div>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li id="job1" onclick="showExperience('job1')">University of Texas at Arlington</li>
+                <li id="job2" onclick="showExperience('job2')">DXC Technology</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="box" id="experience-details"></div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="skills">
+   <div class="skill">
+    <div class=section>Skills</div>
+    <div class=skill_container>
+        <div class=skill_block>
+            <div class="bold"><b>WEB DEVELOPMENT</b></div>
+            <div>
+                javascript, Html, CSS, php, React
+            </div>
+            <!-- <p class=hovers style="padding:10px;font-size: 16px;"><a href="https://github.com/bvharshitha/Web-Development" target="_blank" >View in GitHub</a></p> -->
+
+        </div>
+        <div class=skill_block>
+            <div class="bold">PROGRAMMING LANGUAGES</div>
+            <div>
+                C, Java, Python
+            </div>
+        </div>
+        <div class=skill_block>
+            <div class="bold">OPERATING SYSTEM</div>
+            <div> 
+                Linux, Unix, Windows
+            </div>
+        </div>
+        <div class=skill_block>
+            <div class="bold">PLATFORMS</div>
+            <div>
+                Docker, Git, visual studio, Grpc
+                <!-- <p class=hovers style="font-size: 16px;"><a href="https://github.com/bvharshitha/Machine-Learning" target="_blank" >View in GitHub</a></p> -->
+            </div>
+        </div>
+
+        <div class=skill_block>
+            <div class="bold">DATABASE & CLOUD</div>
+            <div>
+                SQl, MongoDB, Microsoft Azure, AWS 
+            </div>
+        </div>
+        <div class=skill_block>
+            <div class="bold">Visualization Tools</div>
+            <div>
+                PowerBI, Tableau, Matplotlib
+            </div>
+        </div>
+    </div>
+   </div>
+</section>
+<section id="projects">
+    <div class= projects>
+        <div class= section style="padding-top:30px; display:flex">Take a look at my work <div> <img style="padding-left:13px;" src="./static/looking_emoji.png"></div></div>
+        <div class="project_container">
+            <div class=pro_button>   
+                <a href="https://github.com/bvharshitha/Sentiment-Analysis-on-Song-Lyrics.git" target="_blank"><button>
+                    <div class="project_block">
+                        <div class=project_content>
+                            <i class="fas fa-music"></i> 
+                            <p>Sentiment Analysis on Song Lyrics</p>
+                        </div>
+                        <span class="hover_text">Developed sentiment analysis models for song lyrics using LSTM and BERT, 
+                            leveraging their capabilities in sequential data processing and contextual language understanding.
+                             Fine-tuned the models to effectively classify the emotion of lyrics, achieving 77% test accuracy on a highly unbalanced dataset.
+                             <br>
+                             <br>
+                             <b style="text-decoration:solid;">Click to see Project!</b></span>
+                    </div>
+                    </button>
+                </a>
+                </div>
+                <div class="vertical-line"></div>
+                <div class=pro_button>
+
+                    <a href="https://github.com/bvharshitha/Smart-Health-Care_WEBSITE.git" target="_blank"><button>
+                     
+                        <div class="project_block">
+                           <div class=project_content>
+                                <i class="fa-regular fa-window-maximize"></i> 
+                                <p>Smart HealthCare Website</p>
+                            </div>
+                            <span class="hover_text">Developed a full-stack healthcare management platform that connects patients,
+                                 providers, administrators, and pharmacists, featuring secure authentication, appointment booking, 
+                                 and health record management. Built with React, PHP, MySQL, and Axios to provide a seamless, responsive, and efficient user experience.
+                            <br>
+                            <br>
+                            <b style="text-decoration:solid;">Click to see Project!</b></span>
+                        </div>
+                        </button>
+                    </a>
+                    </div>
+            <div class="vertical-line"></div>
+        <div class=pro_button>   
+        <a href="https://github.com/bvharshitha/AI/tree/main/4412_assmt2" target="_blank"><button>
+            <div class="project_block">
+               <div class=project_content>
+                    <i class="fas fa-gamepad"></i>
+                    <p>Red-Blue Nim</p>
+                </div>
+                <span class="hover_text">Developed an AI agent with Minmax with Alpha-Beta Pruning for the Red-Blue Nim game, 
+                    supporting both standard and misère versions, with a user-friendly command-line interface.
+                    <br>
+                     <br>
+                     <b style="text-decoration:solid;">Click to see Project!</b></span>
+            </div>
+            </button>
+        </a>
+        </div>
+        <div class=pro_button>   
+            <br>
+            <div class="horizontal"></div>   
+            <br>
+            <a href="https://github.com/bvharshitha/Machine-Learning/tree/main/Search_engine" target="_blank"><button>
+                <div class="project_block">
+                    <div class=project_content>
+                        <i class="fas fa-search"></i>
+                        <p>SEARCH ENGINE</p>  
+                    </div>
+                    <span class="hover_text"> Search Engine processes a collection of documents and uses TF-IDF to match keywords with the most relevant document. By calculating cosine similarity, 
+                        it ensures the document retrieved closely aligns with the provided keywords, offering accurate and efficient results.
+                         <br>
+                         <br>
+                         <b style="text-decoration:solid;">Click to see Project!</b></span>
+                </div>
+                </button>
+            </a>
+        </div>
+        </div>
+        <div class=git>
+        <a href="https://github.com/bvharshitha?tab=repositories" target="_blank"><button><b>Find out more Projects!</b></button></a>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact">
+<div class=requestform>
+<div class=section style="padding-top:20px;">
+            Contact
+    <div><p>Feel free to reach out to me via email for any opportunities or inquiries</p></div>
+
+    <br>
+    <form action="https://formspree.io/f/xbldjoar" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea><br><br>
+        <div class=request>
+        <button type="submit">Send Email</button>
+        </div>
+    </form>
+<div>
+<div class=mails>
+  <div class=mail>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=venkataharshithab01@gmail.com,BVHharshitha555@gmail.com"  target="_blank"><img src="./static/7089163_gmail_google_icon.png"></a>
+  </div>
+  <div class=mail>
+    <a href="https://www.linkedin.com/in/VenkataHarshitha-Bathala05/" target="_blank"><i class="fab fa-linkedin" style="font-size: 30px; padding:3px;"></i></a>
+  </div>
+  <div class=mail>
+    <a href="https://github.com/bvharshitha" target="_blank"><i  class="fab fa-github" style="font-size: 30px; padding:3px;"></i></a>
+  </div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</body>
+</html>
