@@ -676,6 +676,30 @@ label{
 }
 
 /*-----------------------------------    Responsive Design for Tablets     ----------------------------------*/
+@media screen and (max-width: 1300px){
+    #education, #work-experience, #skills, #projects, #contact {
+        height: auto;
+        padding: 40px 20px;
+    }
+    .skill_container {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 15px;
+    }
+    .box{
+      height:max-content
+    }
+    .navigation a {
+    margin:10px;
+    }
+    .project_container {
+        padding:0 10px;
+    }
+    .project_block {
+        width: 320px;
+        height: 250px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .head {
         flex-direction: row;
@@ -764,15 +788,14 @@ label{
         text-align: center;
     }
 
-    .sidebar ul {
-        display: flex;
-        justify-content: space-around;
-        padding: 10px 0;
+   .sidebar ul {
+        flex-direction: column;
+        align-items: center;
     }
 
     .sidebar li {
-        width: auto;
-        padding: 10px;
+        width: 100%;
+        text-align: center;
     }
 
     .box {
