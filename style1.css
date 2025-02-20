@@ -571,7 +571,18 @@ section p {
     margin: 0 auto;   
 }
 
+.project_block:hover .hover_text,
+.project_block:active .hover_text,  
+.project_block.touch-hover .hover_text {  
+  opacity: 1;
+}
 
+.project_block:hover .project_content,
+.project_block:active .project_content,
+.project_block.touch-hover .project_content { 
+  opacity: 0; 
+  pointer-events: none; 
+}
 /*-----------------------------------    Email section   ----------------------------------*/
 #contact{
     width:100%;

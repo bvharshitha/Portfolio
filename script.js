@@ -70,3 +70,15 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+document.querySelectorAll(".pro_button").forEach(button => {
+    button.addEventListener("touchstart", function() {
+        // Remove the class from all buttons to prevent multiple hovers
+        document.querySelectorAll(".pro_button").forEach(b => b.classList.remove("touch-hover"));
+        this.classList.add("touch-hover");
+    });
+
+    button.addEventListener("touchend", function() {
+        setTimeout(() => this.classList.remove("touch-hover"), 1000); // Hide after 1 sec
+    });
+});
