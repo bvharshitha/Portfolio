@@ -588,7 +588,7 @@ section p {
     width:100%;
 }
 .requestform{
-    width:100%;  
+    width:60%;  
 }
 .section{
     display: flex;
@@ -687,6 +687,10 @@ label{
 }
 
 /*-----------------------------------    Responsive Design for Tablets     ----------------------------------*/
+@media screen and (max-width: 1300px){
+    
+}
+
 @media screen and (max-width: 1300px){
     #education, #work-experience, #skills, #projects, #contact {
         height: auto;
