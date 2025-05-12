@@ -691,7 +691,26 @@ label{
 
 /*-----------------------------------    Responsive Design for Tablets     ----------------------------------*/
 @media screen and (max-width: 1300px){
-    
+      .project_block {
+          width:400px
+      }
+/*     .Project_container{
+       display:grid;
+       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+       justify-content:center;
+       gap:20px;
+       padding: 10px;
+    }
+
+  .project_block {
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    z-index: 0;
+    position:relative;
+    border: 1px dashed black;
+ } */
+
 }
 
 @media screen and (max-width: 1300px){
