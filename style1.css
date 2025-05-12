@@ -690,14 +690,14 @@ label{
 }
 
 /*-----------------------------------    Responsive Design for Tablets     ----------------------------------*/
-@media screen and (min-width: 1600px){\
+@media screen and (min-width: 1600px) and (max-width:3000px){
     .project_container{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     justify-content:center;
     gap:20px;
     padding: 10px;
-      .project_block {
+    .project_block {
               width: 400px;
               height: 250px;
              text-align: center;
