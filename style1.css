@@ -711,6 +711,15 @@ label{
     .horizontal{
         display:none;
     }
+
+    #projects{
+        height: 
+    }
+    #projects br{
+        display:none;
+          height: 75vh;
+    }
+          
 }
 
 @media screen and (max-width: 1300px){
