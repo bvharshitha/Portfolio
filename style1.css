@@ -713,11 +713,10 @@ label{
     }
 
     #projects{
-        height: 
+          height: 75vh;
     }
     #projects br{
         display:none;
-          height: 75vh;
     }
           
 }
