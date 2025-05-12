@@ -596,7 +596,10 @@ section p {
     justify-content: center;
     align-items:center;
 }
-
+.section_text{
+    width:53%;
+    font-weight: normal;
+}
 form{
     width:40%;
 }
