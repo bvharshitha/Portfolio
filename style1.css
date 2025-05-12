@@ -705,6 +705,9 @@ label{
             position:relative;
             border: 1px dashed black;
       }
+    .project_container br {
+        display:none;
+    }
    .vertical-line{
     display:none;
     }
@@ -714,11 +717,7 @@ label{
 
     #projects{
         height: 75vh;
-    }
-    #projects br {
-        display:none;
-    }
-          
+    }     
 }
 
 @media screen and (max-width: 1300px){
