@@ -713,9 +713,9 @@ label{
     }
 
     #projects{
-          height: 75vh;
+        height: 75vh;
     }
-    #projects br{
+    #projects br {
         display:none;
     }
           
